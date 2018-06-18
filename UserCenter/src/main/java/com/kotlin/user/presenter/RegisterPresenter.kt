@@ -9,6 +9,8 @@ import com.kotlin.user.service.impl.UserServiceImpl
 
 class RegisterPresenter : BasePresenter<RegisterView>() {
 
+
+
     fun register(mobile: String, code: String, pwd: String) {
         val userServiceImpl = UserServiceImpl()
         userServiceImpl.register(mobile, code, pwd)
